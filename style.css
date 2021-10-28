@@ -32,13 +32,13 @@ svg {
 	cursor: pointer;
 }
 .kick-pad {
-	background-color: rgb(224, 197, 162);
+	background-color: rgb(226, 209, 186);
 }
 .snare-pad {
-	background-color: rgb(238, 143, 143);
+	background-color: rgb(238, 174, 174);
 }
 .hihat-pad {
-	background-color: rgb(139, 205, 207);
+	background-color: rgb(172, 213, 214);
 }
 .kick-pad.active {
 	background-color: rgb(228, 161, 79);
