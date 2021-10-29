@@ -57,7 +57,7 @@ svg {
 	align-items: center;
 	width: 80%;
 	justify-content: space-between;
-	margin-top: 5rem;
+	margin-top: 2rem;
 }
 .kick,
 .snare,
@@ -74,6 +74,7 @@ svg {
 }
 .controls button {
 	border: none;
+
 	padding: 1rem;
 	background-color: rgb(71, 70, 70);
 	color: white;
@@ -81,8 +82,12 @@ svg {
 	cursor: pointer;
 	transition: all 0.5s ease;
 }
+.mute.active {
+	background-color: rgb(151, 151, 151);
+}
 .play {
 	padding: 1rem;
+	width: 10rem;
 	font-size: 1.5rem;
 	background-color: rgb(71, 70, 70);
 	color: white;
@@ -93,4 +98,46 @@ svg {
 select {
 	padding: 1rem;
 	font-size: 1rem;
+}
+
+.tempo {
+	margin: 2rem;
+	width: 40%;
+}
+.tempo p {
+	margin: 1rem;
+	font-size: 1.3rem;
+	text-align: center;
+}
+.tempo-slider {
+	width: 100%;
+	-webkit-appearance: none;
+	background-color: rgb(87, 87, 87);
+	border-radius: 1rem;
+	margin: 1rem;
+	cursor: pointer;
+	position: relative;
+	padding: 0.2rem;
+}
+
+@keyframes playTrack {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.kick-tracker,
+	.snare-tracker,
+	.hihat-tracker {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 90%;
+		justify-content: space-between;
+		margin-top: 1rem;
+	}
 }
